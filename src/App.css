@@ -11,28 +11,28 @@ body {
   position: relative;
   background-color: rgb(104, 104, 104);
 }
+
 h1 {
   text-align: center;
   margin-top: 20px;
+  margin-bottom: 30px;
   color: aliceblue;
 }
+
 form {
-  position: fixed;
-  bottom: 500px;
-  right: 30%;
-  left: 30%;
+  margin: 20px auto;
+  max-width: 40%;
   border-radius: 8px;
   border: 2px solid rgb(66, 66, 180);
   color: #000;
   box-shadow: 0 2px 4px 4px rgba(0, 0, 0, 0.5);
+  padding: 20px;
 }
 
 
 .items {
-  position: fixed;
-  top: 50px;
-  right: 30%;
-  left: 30%;
+  max-width: 40%;
+  margin: 20px auto;
   border-radius: 8px;
 }
 
