@@ -18,4 +18,4 @@ const Todos =({todos, markComplete}) => {
 
 }
 
-export default App;
+export default Todos;
