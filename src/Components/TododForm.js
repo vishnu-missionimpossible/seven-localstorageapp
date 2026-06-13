@@ -3,7 +3,7 @@ import {
     FormGroup,
     Input,
     InputGroup,
-    InputGroupAddon,
+    InputGroupText,
     Button,
     Form,
     Container,
@@ -25,7 +25,7 @@ const TodoForm = ({addTodos}) => {
                 id: v4(),
                 todoString,
             }
-            //Call the addTodos function passed as a prop to add the new todo item
+            // Call the addTodos function passed as a prop to add the new todo item
             addTodos(todo);
             setTodoString("");
         }}>
@@ -39,9 +39,9 @@ const TodoForm = ({addTodos}) => {
                     value={todoString}
                     onChange={(e) => setTodoString(e.target.value)}
                     />
-                    <InputGroupAddon addonType="prepend">
+                    <InputGroupText>
                         <Button color="success">Add Todo</Button>
-                    </InputGroupAddon>
+                    </InputGroupText>
                 </InputGroup>
             </FormGroup>
         </Form>
