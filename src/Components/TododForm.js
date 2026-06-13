@@ -14,9 +14,9 @@ const TodoForm = ({addTodos}) => {
     const [todoString, setTodoString] = useState("");
 
     return (
-        <Form onsubmit={(e) => {
+        <Form onSubmit={(e) => {
             e.preventDefault();
-            // Hndle form submission logic here
+            // Handle form submission logic here
             if (todoString.trim() === "") {
                 return alert("Please fill some value in the input field");
             }   
@@ -25,7 +25,7 @@ const TodoForm = ({addTodos}) => {
                 id: v4(),
                 todoString,
             }
-            //TODO: Call the addTodos function passed as a prop to add the new todo item
+            //Call the addTodos function passed as a prop to add the new todo item
             addTodos(todo);
             setTodoString("");
         }}>
